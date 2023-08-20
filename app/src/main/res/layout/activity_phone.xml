@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Phone"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with \n Mobile number"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="100dp"
+            app:layout_constraintBottom_toTopOf="@id/edtCountryCode"
+            app:layout_constraintTop_toBottomOf="@id/imgLogin"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/edtCountryCode"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="+91"
+            android:textColor="@color/black"
+            android:textColorHint="#606060"
+            app:layout_constraintBottom_toBottomOf="@+id/edtPhoneNumber"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="Type your number"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/prgsLogin"
+            app:layout_constraintStart_toEndOf="@+id/edtCountryCode"/>
+        <ProgressBar
+            android:id="@+id/prgsLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnSendOTP"/>
+
+<Button
+    android:id="@+id/btnSendOTP"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:text="Send OTP"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginBottom="50dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

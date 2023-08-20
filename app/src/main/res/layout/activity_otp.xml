@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <EditText
+        android:id="@+id/edtcode1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/edt_mobilenumber_bg"/>
+        <EditText
+            android:id="@+id/edtcode2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:background="@drawable/edt_mobilenumber_bg"/>
+        <EditText
+            android:id="@+id/edtcode3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:background="@drawable/edt_mobilenumber_bg"/>
+        <EditText
+            android:id="@+id/edtcode4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:background="@drawable/edt_mobilenumber_bg"/>
+        <EditText
+            android:id="@+id/edtcode5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/edt_mobilenumber_bg"/>
+        <EditText
+            android:id="@+id/edtcode6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/edt_mobilenumber_bg"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't recieve OTP ?"
+        android:layout_marginTop="30dp"
+        android:textSize="10sp"/>
+    <TextView
+        android:id="@+id/txtResendOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESEND OTP"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/resendotp"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/btnVerifyOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="verify"
+        android:textStyle="bold"
+        android:background="@drawable/btn_verify_otp"/>
+    <ProgressBar
+        android:id="@+id/prgrsVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"/>
+
+
+
+</LinearLayout>
+</layout>
